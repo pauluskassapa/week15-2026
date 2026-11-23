@@ -39,7 +39,6 @@ export default function BookList({ initialBooks, readOnly }: { initialBooks: Boo
         <div><h1>Daftar Buku</h1><p>Catat dan kelola koleksi buku sederhana.</p></div>
         <a href="/about">About</a>
       </header>
-      {readOnly && <p className="notice">Mode baca saja. Tambah, edit, dan hapus buku melalui localhost.</p>}
       {!readOnly && <section>
         <h2>{editId === null ? "Tambah Buku" : "Edit Buku"}</h2>
         <form onSubmit={submit}>
